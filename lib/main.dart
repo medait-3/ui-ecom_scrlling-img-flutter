@@ -1,25 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:uiecom/home/hompage.dart';
 
+import 'home/listproduct.dart';
 
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+    return MaterialApp(
+      title: 'Product List',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home:  HomePage(),
+      home: ProductListScreen(),
     );
   }
 }
